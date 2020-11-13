@@ -130,7 +130,7 @@ func reciver(c *gin.Context) {
 		peerConnection, err := api.NewPeerConnection(webrtc.Configuration{
 			ICEServers: []webrtc.ICEServer{
 				{
-					URLs: []string{"stun:stun.l.google.com:19302", "stun:localhost:3478", "turn:localhost:3478"},
+					URLs: []string{"stun:stun.l.google.com:19302", "stun:localhost:3478"},
 				},
 			},
 		})
