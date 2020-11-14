@@ -130,7 +130,14 @@ func reciver(c *gin.Context) {
 		peerConnection, err := api.NewPeerConnection(webrtc.Configuration{
 			ICEServers: []webrtc.ICEServer{
 				{
-					URLs: []string{"stun:stun.l.google.com:19302", "stun:homeassistant.local:3478", "turn:homeassistant.local"},
+					URLs: []string{
+						"stun:stun.l.google.com:19302",
+						"stun:homeassistant.local:3478",
+						"turn:homeassistant.local"
+					},
+					Username: "hassio",
+					Credential: "hassio",
+					CredentialType: ICECredentialTypePassword,
 				},
 			},
 		})
