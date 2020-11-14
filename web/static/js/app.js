@@ -6,7 +6,7 @@ let config = {
            "stun:homeassistant.local:3478", 
            "turn:homeassistant.local:3478"],
     username: "hassio",
-    credentials: "hassio"
+    credential: "hassio"
   }]
 };
 

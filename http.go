@@ -133,11 +133,11 @@ func reciver(c *gin.Context) {
 					URLs: []string{
 						"stun:stun.l.google.com:19302",
 						"stun:homeassistant.local:3478",
-						"turn:homeassistant.local"
+						"turn:homeassistant.local",
 					},
-					Username: "hassio",
-					Credential: "hassio",
-					CredentialType: ICECredentialTypePassword,
+					Username:       "hassio",
+					Credential:     "hassio",
+					CredentialType: webrtc.ICECredentialTypePassword,
 				},
 			},
 		})
