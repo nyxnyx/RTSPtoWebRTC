@@ -2,7 +2,7 @@ let suuid = $('#suuid').val();
 
 let config = {
   iceServers: [{
-    urls: ["stun:stun.l.google.com:19302"]
+    urls: ["stun:stun.l.google.com:19302", "stun:homeassistant.local:3478", "turn:homeassistant.local:3478"]
   }]
 };
 
